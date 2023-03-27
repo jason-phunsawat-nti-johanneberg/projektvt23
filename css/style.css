@@ -15,11 +15,18 @@
     text-align: center;
   }
 
-  header img {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    max-width: 10%;
+  #picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  #picture img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    transform: scale(1);
   }
   
   h1 {
@@ -47,17 +54,14 @@
   
   main {
     display: flex;
+    flex-direction: column;
   }
   
   section {
     flex: 1;
     padding: 20px;
   }
-  
-  section:first-of-type {
-    flex: 2;
-  }
-  
+
   img {
     max-width: 10%;
   }
